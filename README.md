@@ -25,27 +25,12 @@ Usage
 
 ```
 
-Examples
---------
-
-The test file:
-```python
-import unittest
-class TestExample(unittest.TestCase):
-    def test_example(self):
-        """
-        This is a multiline test case, this is line number 1
-        and this is line number 2
-        """
-        assert True
-
-```
-
 Examples:
 ```
 $ nosetests test.py -v --collect-only --with-customdescription --custom-description 0
 test_example (test.TestExample) ... ok
-
+```
+```
 $ nosetests test.py -v --collect-only --with-customdescription --custom-description 1
 
     This is a multiline test case, this is line number 1
@@ -53,7 +38,8 @@ $ nosetests test.py -v --collect-only --with-customdescription --custom-descript
 	
 
  ... ok
-
+```
+```
 $ nosetests test.py -v --collect-only --with-customdescription --custom-description 2
 test_example (test.TestExample)
 Description:
