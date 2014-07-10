@@ -11,6 +11,11 @@ output the test name.
 What if you want to display the whole docstring or maybe the test name with
 description, this plugin will allow you to customize this output.
 
+Installation
+------------
+```
+pip install nose-customdescription
+```
 Usage
 -----
 ```
@@ -22,6 +27,22 @@ Usage
                     description '1': Test Description without test name
                     '2': Test name followed by its description (includes
                     the whole doc string)
+
+```
+
+Examples
+--------
+
+The test file:
+```python
+import unittest
+class TestExample(unittest.TestCase):
+    def test_example(self):
+        """
+        This is a multiline test case, this is line number 1
+        and this is line number 2
+        """
+        assert True
 
 ```
 
